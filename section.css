@@ -1,0 +1,198 @@
+
+section .h1{
+    text-align: center;
+    padding: 50px;
+}
+.h1 h1{font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.h1 p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.grid{
+display: flex;
+justify-content: center;
+}
+.grid img{
+    height: 200px;
+    width: 300px;
+}
+.grid .box{
+   background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px black;
+   border: none;
+    margin-top: 50px;
+    width: 350px;margin: 15px;
+    padding: 30px;
+    transition: transform;
+}
+
+.grid .box:hover{
+    transform: scale(1.01);
+}
+.box h2{opacity: 0.8;
+    padding: 10px;
+    font-weight: 800;
+}
+.box p{
+    opacity: 0.7;
+    padding: 10px;
+    font-weight: 200;
+}
+.box>span{
+    font-weight: 700;
+    padding: 10px;
+    color: rgb(1, 1, 158);
+    text-decoration: none;
+} 
+.box>span:hover{
+    cursor: pointer;
+    color: black; 
+}
+
+.button button{
+    margin-left: 40%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue; color: white; font-weight: 600;
+}
+.button button:hover{
+             transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0px;
+  transition: 0.5s ease-in;
+  transition: all 0.8s ease-out;
+}
+.work{
+    padding: 20px;
+    background-color: rgb(239, 255, 255);
+    animation:work 5s linear ;  
+animation-timeline: view(); animation-range: entry 0% cover 60vh;
+}
+@keyframes pro {
+    from{opacity: 0; clip-path: inset(100% 100% 0 0);}
+    to{opacity: 1; transform:translateY(0 0 0 0);} 
+}
+.pro{
+    padding: 10%;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 103);
+        animation: pro 5s linear ;  
+animation-timeline: view(); animation-range: entry 0% cover 60vh;
+
+}
+@keyframes work {
+    from{opacity: 0; /*transform: translateY(100px);*/scale: 0.5;}
+    to{opacity: 1; /*transform:translateY(0px);*/ scale: 1;} 
+}
+.pro h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.pro p{
+    font-size: 17px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+.pro button{
+  width: 200px;
+    padding: 20px;
+    border: none;
+    margin-right: 50px;
+    border-radius: 5px;
+    background-color: blue; color: white; font-weight: 600;}
+    .pro button:hover{
+             transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0px;
+  transition: 0.5s ease-in;
+  transition: all 0.8s ease-out;}
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+ 
+    background-color: rgb(10, 10, 67);
+  }
+  footer .na{
+    width: 40%;
+  
+  }
+  footer a {
+text-decoration: none;
+    opacity: 0.6;
+    margin: 5px;
+    color: antiquewhite;
+  }
+    footer a:hover{box-shadow: 0 4px 15px 0px;
+        color: blue;
+    }
+   footer ul{
+    list-style-type: none;
+    cursor: pointer;
+   }
+  footer h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  footer h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .na p{
+   opacity: 0.6;
+   margin-bottom: 10px;
+  
+  }
+ .span  span{
+    height: 50px;
+    width: 50px; border-radius: 50%;    
+    background-color: rgba(255, 255, 255, 0.518); 
+    padding: 12px;
+}
+ .span span:hover{
+    opacity: 0.5;
+    cursor: pointer;  box-shadow: 0 4px 15px 0px;
+    transition:  0.5s ease-in-out;
+ }
+.fa-brands{
+    font-size: x-large;
+    color: rgb(255, 255, 255);    
+}
+.span{display: flex; 
+   gap: 20px;
+    
+}
+@media (max-width: 550px) {
+
+    .grid {
+        flex-direction: column;
+    }
+    .button button {
+        margin-left: 30%;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .pro {
+        padding: 5%;
+        flex-direction: column;
+        width: 100%;
+    }
+    .pro button {
+        padding: 5%;
+        margin: 0%;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+}
